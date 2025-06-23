@@ -59,7 +59,7 @@
 
     /* ✅ Nút hình mèo meo.jpeg */
     #goBtn {
-      width: 200px;
+      width: 300px;
       height: auto;
       opacity: 0.5;
       cursor: pointer;
@@ -131,16 +131,16 @@
 </head>
 <body>
 
-  <h1>🎂 Đếm ngược đến Sinh Nhật 🎉</h1>
+  <h1>🎂 Đếm ngược đến Sinh Nhật Huyền 🎉</h1>
   <div id="countdown">Đang tính...</div>
 
-  <div id="tapText"> Bấm vào con mèo</div>
+  <div id="tapText"> Bấm vào con mèo nè</div>
 
   <!-- ✅ Nút mèo -->
   <img id="goBtn" src="meo.png" alt="Nút Sinh Nhật" />
 
   <!-- Popup cảnh báo -->
-  <div id="alertPopup">🎈 Chưa tới sinh nhật đâu, chờ thêm chút nhé!</div>
+  <div id="alertPopup">🎈 Chưa tới sinh nhật đâu, chờ thêm thời gian nữa nhé!</div>
 
   <script>
     const birthdayMonth = 9; // Tháng 8 (0 = tháng 1)
@@ -163,7 +163,7 @@
 
       if (timeDiff <= 0) {
         isBirthday = true;
-        countdownEl.textContent = "🎉 Hôm nay là Sinh Nhật!";
+        countdownEl.textContent = "🎉 Hôm nay là Sinh Nhật của Huyền!";
         button.classList.add("enabled");
       } else {
         isBirthday = false;
