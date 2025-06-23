@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: url('img5.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  color: #d63384;
+}
