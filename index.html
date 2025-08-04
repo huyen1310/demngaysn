@@ -91,12 +91,25 @@
     <body>
     <!--头像-->
     <div class="cs">
-        <img src="img5.jpeg" id="logo">
+        <img src="img5.jpeg" id="logo" onclick="checkDate()" style="cursor: pointer;" title="Bấm vào đây">
     </div>
     <canvas class="canvas" width="1820" height="905"></canvas>
         <p class="text" style="color: #ed3073;">
   Còn lại <span id="span_dt_dt"></span><br> là đến sinh nhật rồi đó 🎂
 </p>
+        <script>
+  function checkDate() {
+    const currentDate = new Date();
+    const unlockDate = new Date('2025-10-13T00:00:00');
+
+    if (currentDate >= unlockDate) {
+      // 👉 Thay bằng link bạn muốn chuyển đến
+      window.location.href = "https://example.com"; 
+    } else {
+      alert("⏳ Chưa tới ngày rồi, chờ tới sinh nhật nhé!");
+    }
+  }
+</script>
 
 <script>
 function show_countdown() {
